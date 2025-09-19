@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gracias | coverlegal.org</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f5f5f5; color: #333; }
+    .container { text-align: center; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h1 { color: #0033A0; margin-bottom: 20px; }
+    p { margin-bottom: 30px; }
+    a { display: inline-block; padding: 12px 20px; background: #00A3E0; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    a:hover { background: #007bb5; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¡Gracias por su mensaje!</h1>
+    <p>Hemos recibido su consulta y nos pondremos en contacto con usted en breve.</p>
+    <a href="index.html">Volver al inicio</a>
+  </div>
+</body>
+</html>
