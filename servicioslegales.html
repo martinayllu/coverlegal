@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | coverlegal.org</title>
+  <style>
+    /* Estilos generales */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; color: #333; }
+
+    /* Encabezado */
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+    .top-nav { background: #0033A0; color: #fff; padding: 8px 0; }
+    .top-nav-content { display: flex; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 20px; }
+    .top-links a { color: #fff; margin-left: 20px; font-size: 14px; text-decoration: none; }
+    .main-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; padding: 15px 20px; }
+    .logo { width: 130px; }
+    .nav-links a { color: #333; margin-left: 25px; font-weight: bold; text-decoration: none; }
+
+    /* Hero */
+    .hero { background: #0033A0; color: #fff; text-align: center; padding: 60px 20px; }
+    .hero h1 { font-size: 42px; margin-bottom: 15px; }
+
+    /* Secciones de servicios */
+    .service-section { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 60px auto; padding: 0 20px; gap: 40px; }
+    .service-section:nth-child(even) { flex-direction: row-reverse; }
+    .service-text { flex: 1; }
+    .service-text h2 { color: #0033A0; margin-bottom: 20px; font-size: 28px; }
+    .service-text p { text-align: justify; }
+    .service-image { flex: 1; }
+    .service-image img { width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+    /* Footer */
+    footer { background: #0033A0; color: #fff; padding: 40px 20px; margin-top: 40px; }
+    .footer-bottom { max-width: 1200px; margin: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); display: flex; justify-content: space-between; align-items: center; }
+    .social-icons a { color: #fff; margin-left: 15px; font-size: 18px; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .service-section { flex-direction: column !important; text-align: center; }
+      .service-image img { max-width: 90%; margin: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-nav">
+      <div class="top-nav-content">
+        <span>Servicios | coverlegal.org</span>
+        <div class="top-links">
+          <a href="iniciarsesion.html">Iniciar sesión</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html"><img src="./logocoverlegal.png" alt="Logo CoverLegal" class="logo"></a>
+      <div class="nav-links">
+        <a href="servicioslegales.html">Servicios Legales</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="acercadenosotros.html">Acerca de Nosotros</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Nuestros Servicios Jurídicos</h1>
+    <p>Asistencia integral en las principales áreas del derecho</p>
+  </section>
+
+  <!-- Párrafo 1 -->
+  <section class="service-section">
+    <div class="service-text">
+      <h2>Asesoramiento en Materia Familiar</h2>
+      <p>
+        El área de asesoramiento en materia familiar constituye uno de los ejes centrales de nuestra práctica profesional, ofreciendo acompañamiento integral en cuestiones vinculadas con el matrimonio, la convivencia y las relaciones intrafamiliares. Prestamos orientación sobre la celebración y efectos jurídicos del matrimonio, los regímenes patrimoniales y sus eventuales modificaciones, así como en la redacción de acuerdos prenupciales. De igual modo, brindamos asistencia en situaciones de crisis matrimonial, tales como la separación de cuerpos o el divorcio, sea por la vía notarial o judicial, procurando siempre una solución conciliadora cuando resulte posible. Asimismo, abordamos asuntos relacionados con la pensión de alimentos, la constitución de patrimonio familiar y la protección frente a situaciones de violencia doméstica, con el propósito de garantizar la seguridad y la estabilidad de todos los miembros de la familia.
+      </p>
+    </div>
+    <div class="service-image">
+      <img src="./familia.jpg" alt="Asesoramiento en materia familiar">
+    </div>
+  </section>
+
+  <!-- Párrafo 2 -->
+  <section class="service-section">
+    <div class="service-text">
+      <h2>Asuntos Relacionados con Menores de Edad</h2>
+      <p>
+        En lo que respecta a asuntos vinculados con menores de edad, ofrecemos un acompañamiento especializado orientado a proteger el interés superior del niño, tanto en el ámbito judicial como extrajudicial. Esto comprende la interposición y defensa en demandas de alimentos, la intervención en procedimientos ante los tribunales de menores —incluyendo aquellos de naturaleza penal—, y la asesoría en temas de responsabilidad parental y administración de bienes de hijos. Igualmente, prestamos asistencia en procesos de adopción, tutela y curatela, así como en la conformación de consejos de familia, siempre con un enfoque de protección y resguardo de los derechos fundamentales de los menores.
+      </p>
+    </div>
+    <div class="service-image">
+      <img src="./menores.jpg" alt="Asuntos relacionados con menores de edad">
+    </div>
+  </section>
+
+  <!-- Párrafo 3 -->
+  <section class="service-section">
+    <div class="service-text">
+      <h2>Asesoramiento en Tercera Edad y Sucesiones</h2>
+      <p>
+        Por otra parte, nuestro asesoramiento en temas de tercera edad y sucesiones se centra en brindar seguridad jurídica a los adultos mayores y a sus familias. En este ámbito, ofrecemos la revisión de documentos vinculados a contratos de seguros, residencias y arrendamientos, así como la tramitación de beneficios estatales o programas especiales. Asimismo, acompañamos en la elaboración y revisión de testamentos, en los procedimientos de sucesión intestada y en la gestión de anticipos de legítima, velando por la correcta formalización de cada acto. También orientamos sobre poderes notariales y en la designación de apoyos y salvaguardas, tanto en sede notarial como judicial, garantizando que cada decisión preserve los derechos patrimoniales y personales de las personas de la tercera edad.
+      </p>
+    </div>
+    <div class="service-image">
+      <img src="./sucesiones.jpg" alt="Asesoramiento en tercera edad y sucesiones">
+    </div>
+  </section>
+
+  <!-- Párrafo 4 -->
+  <section class="service-section">
+    <div class="service-text">
+      <h2>Materias Civiles, Empresariales y Personales</h2>
+      <p>
+        Finalmente, nuestra labor abarca un amplio espectro de asesoramiento en materias civiles, empresariales, patrimoniales y personales, proporcionando soluciones jurídicas adaptadas a cada necesidad. Incluye la constitución de empresas y personas jurídicas, la estructuración de fideicomisos en sus distintas modalidades, así como la defensa en asuntos financieros, bancarios y concursales. Del mismo modo, intervenimos en operaciones de bienes muebles e inmuebles —como compraventas, transferencias, arrendamientos o disputas por propiedad—, y en procedimientos de carácter personal, tales como cambio de nombre, declaraciones juradas o protección frente a suplantaciones de identidad. Asimismo, ofrecemos representación en conflictos laborales, de consumo, migratorios, notariales y penales, lo que nos permite brindar un servicio integral y multidisciplinario que cubre todas las áreas esenciales del derecho.
+      </p>
+    </div>
+    <div class="service-image">
+      <img src="./civiles.jpg" alt="Materias civiles, empresariales y personales">
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-bottom">
+      <div>&copy; 2025 CoverLegal. Todos los derechos reservados.</div>
+      <div class="social-icons">
+        <a href="#">FB</a>
+        <a href="#">X</a>
+        <a href="#">LI</a>
+        <a href="#">IG</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
