@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiénes Somos | CoverLegal</title>
   <style>
-    /* Reutilizando estilos principales */
+    /* Estilos globales */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
     }
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #333;
+      background-color: #fff;
     }
 
     header {
@@ -29,28 +29,28 @@
       background-color: #0033A0;
       color: white;
       padding: 8px 0;
+      font-size: 14px;
     }
     .top-nav-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .top-links a {
       color: white;
       text-decoration: none;
       margin-left: 20px;
-      font-size: 14px;
     }
     .main-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       max-width: 1200px;
       margin: 0 auto;
       padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     .logo {
       width: 130px;
@@ -65,80 +65,77 @@
       color: #0033A0;
     }
 
-    .section {
-      padding: 60px 0;
-    }
-    .section-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .section-title {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 32px;
-      color: #0033A0;
-    }
-
-    /* Bloques de quiénes somos */
-    .about-section {
-      padding: 60px 0;
-      background-color: #f9f9f9;
-    }
-    .about-content {
+    /* Hero principal */
+    .hero {
+      position: relative;
+      background: url("hero-quienes.jpg") center/cover no-repeat;
+      height: 60vh;
       display: flex;
       align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 51, 160, 0.65);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+    .hero-content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .hero-content p {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Secciones de contenido */
+    .section {
+      padding: 80px 20px;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 20px;
-      gap: 40px;
     }
-    .about-content.reverse {
-      flex-direction: row-reverse;
+    .section h2 {
+      font-size: 32px;
+      color: #0033A0;
+      margin-bottom: 30px;
+      text-align: center;
     }
-    .about-text {
-      flex: 1;
-    }
-    .about-text p {
+    .section p {
       font-size: 18px;
       margin-bottom: 20px;
-    }
-    .about-image {
-      flex: 1;
-    }
-    .about-image img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: justify;
     }
 
     footer {
       background-color: #0033A0;
       color: white;
-      padding: 60px 0 30px;
+      padding: 60px 20px 30px;
+      text-align: center;
     }
     .footer-bottom {
       max-width: 1200px;
       margin: 40px auto 0;
-      padding: 20px 20px 0;
+      padding-top: 20px;
       border-top: 1px solid rgba(255,255,255,0.2);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
     .social-icons a {
       color: white;
       margin-left: 15px;
       font-size: 18px;
-    }
-
-    @media (max-width: 768px) {
-      .about-content {
-        flex-direction: column;
-      }
-      .about-content.reverse {
-        flex-direction: column;
-      }
+      text-decoration: none;
     }
   </style>
 </head>
@@ -160,91 +157,49 @@
       <div class="nav-links">
         <a href="servicioslegales.html">Servicios Legales</a>
         <a href="iniciarsesion.html">Recursos</a>
-        <a href="acercadenosotros.html" class="active">Acerca de Nosotros</a>
+        <a href="quienes-somos.html" class="active">Acerca de Nosotros</a>
       </div>
     </nav>
   </header>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Quiénes Somos</h1>
+      <p>Su tranquilidad legal, nuestro compromiso permanente.</p>
+    </div>
+  </section>
+
+  <!-- Contenido -->
   <section class="section">
-    <div class="section-content">
-      <h1 class="section-title">Quiénes Somos</h1>
-    </div>
+    <h2>Nuestra Filosofía</h2>
+    <p>En nuestra firma creemos que la verdadera libertad comienza cuando uno puede vivir y trabajar sin temor a los imprevistos legales. Por eso, hemos creado planes de asesoría que brindan a trabajadores, profesionales independientes y familias la tranquilidad de contar con un respaldo jurídico permanente. Nuestro propósito es que cada cliente pueda concentrarse en lo que realmente importa —su trabajo, sus proyectos, sus seres queridos— mientras nosotros nos encargamos de lo complejo: el mundo legal.</p>
   </section>
 
-  <section class="about-section">
-    <div class="about-content">
-      <div class="about-text">
-        <p>
-          En nuestra firma creemos que la verdadera libertad comienza cuando uno puede vivir y trabajar sin temor a los imprevistos legales. 
-          Por eso, hemos creado planes de asesoría que brindan a trabajadores, profesionales independientes y familias la tranquilidad de contar 
-          con un respaldo jurídico permanente. Nuestro propósito es que cada cliente pueda concentrarse en lo que realmente importa —su trabajo, 
-          sus proyectos, sus seres queridos— mientras nosotros nos encargamos de lo complejo: el mundo legal.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="images/quienes1.jpg" alt="Asesoría legal integral">
-      </div>
-    </div>
+  <section class="section">
+    <h2>Experiencia y Confianza</h2>
+    <p>Nos especializamos en simplificar lo que suele ser incierto y abrumador. Con la experiencia de un equipo de abogados altamente calificados, ofrecemos soluciones claras y efectivas frente a cualquier problema u oportunidad legal. Desde asuntos familiares hasta empresariales, financieros o patrimoniales, nuestros planes están diseñados para acompañar a cada persona en los momentos más importantes de su vida, con la certeza de que nunca estará sola frente a la ley.</p>
   </section>
 
-  <section class="about-section">
-    <div class="about-content reverse">
-      <div class="about-text">
-        <p>
-          Nos especializamos en simplificar lo que suele ser incierto y abrumador. Con la experiencia de un equipo de abogados altamente calificados, 
-          ofrecemos soluciones claras y efectivas frente a cualquier problema u oportunidad legal. Desde asuntos familiares hasta empresariales, 
-          financieros o patrimoniales, nuestros planes están diseñados para acompañar a cada persona en los momentos más importantes de su vida, 
-          con la certeza de que nunca estará sola frente a la ley.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="images/quienes2.jpg" alt="Equipo de abogados especializados">
-      </div>
-    </div>
+  <section class="section">
+    <h2>Prevención y Anticipación</h2>
+    <p>Lo que nos diferencia es que no solo resolvemos problemas: los anticipamos y prevenimos. Nuestros clientes disfrutan de la confianza de tener siempre a su lado a un aliado legal que comprende sus necesidades, protege sus derechos y les brinda la seguridad de tomar decisiones informadas. Nuestra misión es transformar la asesoría legal en una experiencia accesible, cercana y confiable, que se traduce en paz mental y libertad para vivir plenamente.</p>
   </section>
 
-  <section class="about-section">
-    <div class="about-content">
-      <div class="about-text">
-        <p>
-          Lo que nos diferencia es que no solo resolvemos problemas: los anticipamos y prevenimos. Nuestros clientes disfrutan de la confianza 
-          de tener siempre a su lado a un aliado legal que comprende sus necesidades, protege sus derechos y les brinda la seguridad de tomar 
-          decisiones informadas. Nuestra misión es transformar la asesoría legal en una experiencia accesible, cercana y confiable, que se 
-          traduce en paz mental y libertad para vivir plenamente.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="images/quienes3.jpg" alt="Prevención y confianza legal">
-      </div>
-    </div>
-  </section>
-
-  <section class="about-section">
-    <div class="about-content reverse">
-      <div class="about-text">
-        <p>
-          En definitiva, somos un equipo comprometido en poner todo nuestro conocimiento y experiencia al servicio de quienes confían en nosotros. 
-          Creemos que cada persona merece un futuro sin incertidumbre legal, y trabajamos día a día para hacerlo posible. Con nosotros, usted obtiene 
-          mucho más que un abogado: obtiene un plan de vida con respaldo jurídico permanente.
-        </p>
-      </div>
-      <div class="about-image">
-        <img src="images/quienes4.jpg" alt="Compromiso y respaldo permanente">
-      </div>
-    </div>
+  <section class="section">
+    <h2>Compromiso con el Futuro</h2>
+    <p>En definitiva, somos un equipo comprometido en poner todo nuestro conocimiento y experiencia al servicio de quienes confían en nosotros. Creemos que cada persona merece un futuro sin incertidumbre legal, y trabajamos día a día para hacerlo posible. Con nosotros, usted obtiene mucho más que un abogado: obtiene un plan de vida con respaldo jurídico permanente.</p>
   </section>
 
   <footer>
     <div class="footer-bottom">
-      <div class="copyright">
-        &copy; 2025 CoverLegal. Todos los derechos reservados.
-      </div>
+      <div>&copy; 2025 CoverLegal. Todos los derechos reservados.</div>
       <div class="social-icons">
         <a href="#">FB</a>
         <a href="#">X</a>
         <a href="#">LI</a>
         <a href="#">IG</a>
-        <a href="#">PCST</a>
       </div>
     </div>
   </footer>
