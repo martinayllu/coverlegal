@@ -3,43 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios | coverlegal.org</title>
+  <title>Servicios Legales | coverlegal.org</title>
   <style>
     /* Estilos generales */
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { line-height: 1.6; color: #333; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Garamond, sans-serif;
+    }
+    body {
+      font-family: Garamond, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
 
     /* Encabezado */
-    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-    .top-nav { background: #0033A0; color: #fff; padding: 8px 0; }
-    .top-nav-content { display: flex; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 20px; }
-    .top-links a { color: #fff; margin-left: 20px; font-size: 14px; text-decoration: none; }
-    .main-nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; padding: 15px 20px; }
-    .logo { width: 130px; }
-    .nav-links a { color: #333; margin-left: 25px; font-weight: bold; text-decoration: none; }
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .top-nav {
+      background-color: #1f3768;
+      color: white;
+      padding: 8px 0;
+    }
+    .top-nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .top-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    .main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 15px 20px;
+    }
+    .logo {
+      width: 130px;
+    }
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+    }
 
     /* Hero */
-    .hero { background: #0033A0; color: #fff; text-align: center; padding: 60px 20px; }
-    .hero h1 { font-size: 42px; margin-bottom: 15px; }
+    .hero {
+      background-color: #1f3768;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
 
     /* Secciones de servicios */
-    .service-section { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 60px auto; padding: 0 20px; gap: 40px; }
-    .service-section:nth-child(even) { flex-direction: row-reverse; }
-    .service-text { flex: 1; }
-    .service-text h2 { color: #0033A0; margin-bottom: 20px; font-size: 28px; }
-    .service-text p { text-align: justify; }
-    .service-image { flex: 1; }
-    .service-image img { width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .service-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+    .service-section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .service-text {
+      flex: 1;
+    }
+    .service-text h2 {
+      color: #1f3768;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    .service-text p {
+      text-align: justify;
+      font-size: 18px;
+    }
+    .service-image {
+      flex: 1;
+    }
+    .service-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-    /* Footer */
-    footer { background: #0033A0; color: #fff; padding: 40px 20px; margin-top: 40px; }
-    .footer-bottom { max-width: 1200px; margin: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); display: flex; justify-content: space-between; align-items: center; }
-    .social-icons a { color: #fff; margin-left: 15px; font-size: 18px; }
+    /* Pie de página */
+    footer {
+      background-color: #1f3768;
+      color: white;
+      padding: 60px 0 30px;
+      margin-top: 60px;
+    }
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .footer-column h3 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 40px auto 0;
+      padding: 20px 20px 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .social-icons a {
+      color: white;
+      margin-left: 15px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .social-icons img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+    }
 
     /* Responsive */
     @media (max-width: 768px) {
-      .service-section { flex-direction: column !important; text-align: center; }
-      .service-image img { max-width: 90%; margin: auto; }
+      .service-section {
+        flex-direction: column !important;
+        text-align: center;
+      }
+      .service-image img {
+        max-width: 90%;
+        margin: auto;
+      }
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+      .social-icons {
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
@@ -47,7 +192,7 @@
   <header>
     <div class="top-nav">
       <div class="top-nav-content">
-        <span>Servicios | coverlegal.org</span>
+        <span>Planes Legales | coverlegal.org</span>
         <div class="top-links">
           <a href="iniciarsesion.html">Iniciar sesión</a>
           <a href="contacto.html">Contacto</a>
@@ -55,21 +200,24 @@
       </div>
     </div>
     <nav class="main-nav">
-      <a href="index.html"><img src="./logocoverlegal.png" alt="Logo CoverLegal" class="logo"></a>
+      <a href="index.html">
+        <img src="./logocoverlegal.png" alt="Logo CoverLegal" class="logo">
+      </a>
       <div class="nav-links">
-        <a href="servicioslegales.html">Servicios Legales</a>
+        <a href="servicioslegales.html">Servicios</a>
         <a href="iniciarsesion.html">Recursos</a>
-        <a href="acercadenosotros.html">Acerca de Nosotros</a>
+        <a href="acercadenosotros.html">Nosotros</a>
       </div>
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <h1>Nuestros Servicios Jurídicos</h1>
     <p>Asistencia integral en las principales áreas del derecho</p>
   </section>
 
-  <!-- Párrafo 1 -->
+  <!-- Servicio 1 -->
   <section class="service-section">
     <div class="service-text">
       <h2>Asesoramiento en Materia Familiar</h2>
@@ -82,12 +230,12 @@
     </div>
   </section>
 
-  <!-- Párrafo 2 -->
+  <!-- Servicio 2 -->
   <section class="service-section">
     <div class="service-text">
       <h2>Asuntos Relacionados con Menores de Edad</h2>
       <p>
-        Del mismo modo, sabemos que el bienestar de los hijos es la mayor prioridad para cualquier familia. Nuestro equipo brinda asesoramiento especializado que garantiza la defensa de los derechos de los menores y el cuidado de su futuro. Con nuestros planes, los padres y madres encuentran apoyo integral frente a cualquier situación, obteniendo la serenidad de saber que cada paso está guiado por profesionales que velan por el interés superior de los niños y aseguran un porvenir estable y protegido para ellos.
+        Sabemos que el bienestar de los hijos es la mayor prioridad para cualquier familia. Nuestro equipo brinda asesoramiento especializado que garantiza la defensa de los derechos de los menores y el cuidado de su futuro. Con nuestros planes, los padres y madres encuentran apoyo integral frente a cualquier situación, obteniendo la serenidad de saber que cada paso está guiado por profesionales que velan por el interés superior de los niños y aseguran un porvenir estable y protegido para ellos.
       </p>
     </div>
     <div class="service-image">
@@ -95,12 +243,12 @@
     </div>
   </section>
 
-  <!-- Párrafo 3 -->
+  <!-- Servicio 3 -->
   <section class="service-section">
     <div class="service-text">
       <h2>Asesoramiento en Tercera Edad y Sucesiones</h2>
       <p>
-        También comprendemos la importancia de ofrecer respaldo a nuestros clientes en la etapa de la tercera edad y en todos los asuntos relacionados con herencias. Nos especializamos en dar claridad y confianza para organizar el patrimonio, planificar la sucesión y tomar decisiones que resguarden el bienestar de la familia. Con nuestros planes, los clientes y sus seres queridos disfrutan de la tranquilidad de que cada documento, cada decisión y cada trámite están bajo control, evitando conflictos futuros y asegurando la continuidad de su legado con armonía.
+        Comprendemos la importancia de ofrecer respaldo a nuestros clientes en la etapa de la tercera edad y en todos los asuntos relacionados con herencias. Nos especializamos en dar claridad y confianza para organizar el patrimonio, planificar la sucesión y tomar decisiones que resguarden el bienestar de la familia. Con nuestros planes, los clientes y sus seres queridos disfrutan de la tranquilidad de que cada documento, decisión y trámite están bajo control, evitando conflictos futuros y asegurando la continuidad de su legado con armonía.
       </p>
     </div>
     <div class="service-image">
@@ -108,12 +256,12 @@
     </div>
   </section>
 
-  <!-- Párrafo 4 -->
+  <!-- Servicio 4 -->
   <section class="service-section">
     <div class="service-text">
       <h2>Materias Civiles, Empresariales y Personales</h2>
       <p>
-        Finalmente, brindamos un servicio integral que cubre todas las demás áreas legales que impactan directamente en la vida personal, patrimonial y empresarial de nuestros clientes. Desde la creación de negocios hasta la gestión de bienes o la resolución de conflictos legales, nuestros planes están diseñados para dar confianza y tranquilidad en cada paso. Nos enfocamos en ofrecer soluciones prácticas, seguras y oportunas, permitiendo que nuestros clientes se concentren en lo más importante: vivir con la certeza de estar siempre respaldados por profesionales que protegen sus intereses.
+        Brindamos un servicio integral que cubre todas las demás áreas legales que impactan directamente en la vida personal, patrimonial y empresarial de nuestros clientes. Desde la creación de negocios hasta la gestión de bienes o la resolución de conflictos legales, nuestros planes están diseñados para dar confianza y tranquilidad en cada paso. Nos enfocamos en ofrecer soluciones prácticas, seguras y oportunas, permitiendo que nuestros clientes se concentren en lo más importante: vivir con la certeza de estar siempre respaldados por profesionales que protegen sus intereses.
       </p>
     </div>
     <div class="service-image">
@@ -121,14 +269,35 @@
     </div>
   </section>
 
+  <!-- Pie de página -->
   <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>CoverLegal.org</h3>
+        <ul class="footer-links">
+          <li><a href="acercadenosotros.html">Nuestra Compañía</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="iniciarsesion.html">Red de abogados</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer-bottom">
-      <div>&copy; 2025 CoverLegal. Todos los derechos reservados.</div>
+      <div class="copyright">
+        &copy; 2025 CoverLegal. Todos los derechos reservados.
+      </div>
       <div class="social-icons">
-        <a href="#">FB</a>
-        <a href="#">X</a>
-        <a href="#">LI</a>
-        <a href="#">IG</a>
+        <a href="https://www.facebook.com/tu_pagina" target="_blank">
+          <img src="./fb.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/tu_pagina" target="_blank">
+          <img src="./x.png" alt="X">
+        </a>
+        <a href="https://linkedin.com/tu_pagina" target="_blank">
+          <img src="./ln.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/tu_pagina" target="_blank">
+          <img src="./ig.png" alt="Instagram">
+        </a>
       </div>
     </div>
   </footer>
