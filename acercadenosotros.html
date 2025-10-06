@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiénes Somos | CoverLegal</title>
   <style>
-    /* General Styles */
+    /* Estilos generales */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: Garamond, sans-serif;
     }
     body {
+      font-family: Garamond, sans-serif;
       line-height: 1.6;
       color: #333;
     }
 
-    /* Header */
+    /* Encabezado */
     header {
       background-color: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -26,7 +27,7 @@
       z-index: 1000;
     }
     .top-nav {
-      background-color: #0033A0;
+      background-color: #1f3768;
       color: white;
       padding: 8px 0;
     }
@@ -62,67 +63,60 @@
       font-weight: bold;
     }
 
-    /* Hero with Video */
+    /* Hero con video de fondo */
     .hero {
       position: relative;
-      height: 60vh;
+      height: 50vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
       color: white;
       text-align: center;
-      overflow: hidden;
     }
     .hero-video {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: 0;
-      transform: translate(-50%, -50%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0; 
-      left: 0; 
-      right: 0; 
-      bottom: 0;
-      background: rgba(0, 51, 160, 0.65); /* Corporate blue overlay */
       z-index: 1;
     }
     .hero-content {
       position: relative;
       z-index: 2;
-      max-width: 800px;
-      padding: 20px;
+      max-width: 1200px;
+      padding: 0 20px;
+      background: rgba(31,55,104,0.55);
+      border-radius: 8px;
     }
     .hero h1 {
       font-size: 42px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      width: 100%;
     }
     .hero p {
       font-size: 18px;
+      width: 100%;
       max-width: 600px;
       margin: 0 auto;
     }
 
-    /* Content Section */
+    /* Sección principal */
     .section {
-      padding: 60px 20px;
+      padding: 60px 0;
     }
     .section-content {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
+      padding: 0 20px;
     }
     .section-title {
       text-align: center;
       margin-bottom: 40px;
       font-size: 32px;
-      color: #0033A0;
+      color: #1f3768;
     }
     .section p {
       margin-bottom: 20px;
@@ -130,9 +124,9 @@
       text-align: justify;
     }
 
-    /* Footer */
+    /* Pie de página */
     footer {
-      background-color: #0033A0;
+      background-color: #1f3768;
       color: white;
       padding: 60px 0 30px;
     }
@@ -171,15 +165,19 @@
       color: white;
       margin-left: 15px;
       font-size: 18px;
+      text-decoration: none;
+    }
+    .social-icons img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
     }
 
     /* Responsive */
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 28px;
-      }
-      .hero p {
-        font-size: 16px;
+      .hero h1, .hero p {
+        width: 100%;
       }
       .footer-content {
         grid-template-columns: 1fr;
@@ -210,27 +208,26 @@
         <img src="./logocoverlegal.png" alt="Logo CoverLegal" class="logo">
       </a>
       <div class="nav-links">
-        <a href="servicioslegales.html">Servicios Legales</a>
+        <a href="servicioslegales.html">Servicios</a>
         <a href="iniciarsesion.html">Recursos</a>
-        <a href="acercadenosotros.html">Acerca de Nosotros</a>
+        <a href="acercadenosotros.html">Nosotros</a>
       </div>
     </nav>
   </header>
 
-  <!-- Hero with Video -->
+  <!-- Hero con video -->
   <section class="hero">
     <video autoplay muted loop playsinline class="hero-video">
       <source src="Back_acerca.mp4" type="video/mp4">
-      Su navegador no soporta la reproducción de video.
+      Tu navegador no soporta video en HTML5.
     </video>
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Quiénes Somos</h1>
       <p>Su tranquilidad legal, nuestro compromiso permanente.</p>
     </div>
   </section>
 
-  <!-- Content -->
+  <!-- Contenido -->
   <section class="section">
     <div class="section-content">
       <h2 class="section-title">Nuestra Firma</h2>
@@ -241,7 +238,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Pie de página -->
   <footer>
     <div class="footer-content">
       <div class="footer-column">
@@ -249,7 +246,7 @@
         <ul class="footer-links">
           <li><a href="acercadenosotros.html">Nuestra Compañía</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="iniciarsesion.html">Red de Abogados</a></li>
+          <li><a href="iniciarsesion.html">Red de abogados</a></li>
         </ul>
       </div>
     </div>
@@ -258,11 +255,18 @@
         &copy; 2025 CoverLegal. Todos los derechos reservados.
       </div>
       <div class="social-icons">
-        <a href="#">FB</a>
-        <a href="#">X</a>
-        <a href="#">LI</a>
-        <a href="#">IG</a>
-        <a href="#">PCST</a>
+        <a href="https://www.facebook.com/tu_pagina" target="_blank">
+          <img src="./fb.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/tu_pagina" target="_blank">
+          <img src="./x.png" alt="X">
+        </a>
+        <a href="https://linkedin.com/tu_pagina" target="_blank">
+          <img src="./ln.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/tu_pagina" target="_blank">
+          <img src="./ig.png" alt="Instagram">
+        </a>
       </div>
     </div>
   </footer>
