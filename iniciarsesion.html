@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar Sesión | CoverLegal</title>
+  <title>Iniciar Sesión | coverlegal.org</title>
   <style>
     /* Estilos generales */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: Garamond, sans-serif;
     }
     body {
-      font-family: Arial, sans-serif;
+      font-family: Garamond, sans-serif;
       line-height: 1.6;
       color: #333;
     }
@@ -27,7 +27,7 @@
       z-index: 1000;
     }
     .top-nav {
-      background-color: #0033A0;
+      background-color: #1f3768;
       color: white;
       padding: 8px 0;
     }
@@ -63,7 +63,7 @@
       font-weight: bold;
     }
 
-    /* Página de login */
+    /* Sección de login */
     .login-section {
       display: flex;
       justify-content: center;
@@ -71,7 +71,8 @@
       min-height: 70vh;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
+      gap: 40px;
     }
     .login-left {
       flex: 1;
@@ -81,6 +82,8 @@
     }
     .login-left img {
       max-width: 350px;
+      width: 100%;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
     }
     .login-right {
       flex: 1;
@@ -90,8 +93,10 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     .login-right h2 {
-      margin-bottom: 20px;
-      color: #0033A0;
+      margin-bottom: 25px;
+      color: #1f3768;
+      font-size: 28px;
+      text-align: center;
     }
     .form-group {
       margin-bottom: 20px;
@@ -104,12 +109,13 @@
     }
     .form-group input {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 16px;
     }
     .login-button {
-      background-color: #0033A0;
+      background-color: #4682B4;
       color: white;
       padding: 12px;
       border: none;
@@ -118,15 +124,17 @@
       width: 100%;
       font-size: 16px;
       font-weight: bold;
+      text-transform: uppercase;
+      transition: background 0.3s ease;
     }
     .login-button:hover {
-      background-color: #002080;
+      background-color: #1f3768;
     }
     .login-help {
       display: block;
       margin-top: 15px;
       text-align: center;
-      font-size: 13px;
+      font-size: 14px;
       color: #777;
       text-decoration: none;
     }
@@ -136,9 +144,10 @@
 
     /* Pie de página */
     footer {
-      background-color: #0033A0;
+      background-color: #1f3768;
       color: white;
       padding: 60px 0 30px;
+      margin-top: 60px;
     }
     .footer-content {
       max-width: 1200px;
@@ -175,6 +184,13 @@
       color: white;
       margin-left: 15px;
       font-size: 18px;
+      text-decoration: none;
+    }
+    .social-icons img {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
     }
 
     /* Responsive */
@@ -212,12 +228,12 @@
     </div>
     <nav class="main-nav">
       <a href="index.html">
-        <img src="logocoverlegal.png" alt="Logo CoverLegal" class="logo">
+        <img src="./logocoverlegal.png" alt="Logo CoverLegal" class="logo">
       </a>
       <div class="nav-links">
-        <a href="servicioslegales.html">Servicios Legales</a>
-        <a href="recursos.html">Recursos</a>
-        <a href="acercadenosotros.html">Acerca de Nosotros</a>
+        <a href="servicioslegales.html">Servicios</a>
+        <a href="iniciarsesion.html">Recursos</a>
+        <a href="acercadenosotros.html">Nosotros</a>
       </div>
     </nav>
   </header>
@@ -225,7 +241,7 @@
   <!-- Sección de login -->
   <section class="login-section">
     <div class="login-left">
-      <img src="logocoverlegal.png" alt="Logo CoverLegal">
+      <img src="./logocoverlegal.png" alt="Logo CoverLegal">
     </div>
     <div class="login-right">
       <h2>Iniciar Sesión</h2>
@@ -248,11 +264,11 @@
   <footer>
     <div class="footer-content">
       <div class="footer-column">
-        <h3>Acerca de Nosotros</h3>
+        <h3>CoverLegal.org</h3>
         <ul class="footer-links">
-          <li><a href="nuestracompania.html">Nuestra Compañía</a></li>
+          <li><a href="acercadenosotros.html">Nuestra Compañía</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="reddeabogados.html">Red de abogados</a></li>
+          <li><a href="iniciarsesion.html">Red de abogados</a></li>
         </ul>
       </div>
     </div>
@@ -261,11 +277,18 @@
         &copy; 2025 CoverLegal. Todos los derechos reservados.
       </div>
       <div class="social-icons">
-        <a href="#">FB</a>
-        <a href="#">X</a>
-        <a href="#">LI</a>
-        <a href="#">IG</a>
-        <a href="#">PCST</a>
+        <a href="https://www.facebook.com/tu_pagina" target="_blank">
+          <img src="./fb.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com/tu_pagina" target="_blank">
+          <img src="./x.png" alt="X">
+        </a>
+        <a href="https://linkedin.com/tu_pagina" target="_blank">
+          <img src="./ln.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/tu_pagina" target="_blank">
+          <img src="./ig.png" alt="Instagram">
+        </a>
       </div>
     </div>
   </footer>
